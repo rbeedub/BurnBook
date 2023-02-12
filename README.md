@@ -132,3 +132,19 @@ fetch("http://localhost:9292/test")
 [dbdiagram.io]: https://dbdiagram.io/
 [postman download]: https://www.postman.com/downloads/
 [network tab]: https://developer.chrome.com/docs/devtools/network/
+
+
+- Average class age of students in the burn book
+- All liked comments
+- Most popular mean girl by number of parties
+- Superlative descritpion for each mean girl: #{self.name} aka: #{self.superlative}
+- An array of all comments by mean girl
+- Level of uncool points awarded by mean girl
+- number of comments made by each mean girl
+- increase and decrease level of uncool by one 
+- Sort students by name alphabetically
+- Sort students by type of uncool alphabetically
+- Sort students by class year 
+- Create a new Student
+- Create a new Meangirl
+- Create a new Comment
