@@ -22,8 +22,9 @@ class Student < ActiveRecord::Base
         Student.create(name: name, year: year, type_of_uncool: type_of_uncool)
      end
 
-     def new_comment(comment, level_of_uncool)
-        Comment.create(student_id: self.id, comment: comment, level_of_uncool: level_of_uncool, like: false)
+     def new_comment(meangirl, comment, level_of_uncool)
+        self.comments.create(student_id: self.id, meangirl_id: meangirl.id, comment: comment, level_of_uncool: level_of_uncool, like: false)
     end
+
 
 end
