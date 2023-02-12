@@ -26,4 +26,5 @@ class Meangirl < ActiveRecord::Base
         Meangirl.create(name: name, number_of_parties: number_of_parties, superlative: superlative, year: year)
     end
 
+
 end

@@ -16,9 +16,6 @@ class Comment < ActiveRecord::Base
         self.save
     end
 
-    def self.new_comment(comment, level_of_uncool, like=false)
-        Comment.create(student_id: self.id, meangirl_id: meangirl.id, comment: comment, level_of_uncool: level_of_uncool)
-    end
 
 
 end
