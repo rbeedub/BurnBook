@@ -148,3 +148,4 @@ fetch("http://localhost:9292/test")
 - Create a new Student
 - Create a new Meangirl
 - Create a new Comment
+- Generate an array of meangirl photos

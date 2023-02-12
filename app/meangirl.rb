@@ -26,5 +26,8 @@ class Meangirl < ActiveRecord::Base
         Meangirl.create(name: name, number_of_parties: number_of_parties, superlative: superlative, year: year)
     end
 
+    def self.glamourshots
+        self.all.pluck(:headshot_photo)
+      end
 
 end
