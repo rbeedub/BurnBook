@@ -6,8 +6,8 @@ class Meangirl < ActiveRecord::Base
         self.all.max_by{|meangirl| meangirl.number_of_parties}
     end
 
-    def get_superlative
-        "#{self.name} aka: #{self.superlative}"
+    def self.get_superlative
+        self.all.map {|meangirl| "#{meangirl.name} aka: #{meangirl.superlative}"}
     end
 
     def all_comments

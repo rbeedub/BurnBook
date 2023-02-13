@@ -16,6 +16,4 @@ class Comment < ActiveRecord::Base
         self.save
     end
 
-
-
 end
