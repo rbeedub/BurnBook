@@ -26,4 +26,7 @@ class Student < ActiveRecord::Base
         self.comments.create(student_id: self.id, meangirl_id: meangirl.id, comment: comment, level_of_uncool: level_of_uncool, like: false)
     end
 
+    def student_photos
+        self.yearbook_photo
+    end
 end

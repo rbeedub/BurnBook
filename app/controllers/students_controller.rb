@@ -4,11 +4,18 @@ class StudentsController < ApplicationController
     get '/students' do
         Student.all.to_json
       end
-  
+      
+    get '/students/a_to_z_students' do
+        Student.a_to_z_students.to_json
+    end
+
       get "/students/:id" do
          Student.find(params[:id]).to_json
       end
   
+    post 'students/new_comment' do
+        Student.all.new_comment.to_json
+    end
   
       post '/students' do
           new_kid = Student.create(name: params[:name], type_of_uncool: params[:type_of_uncool], year: params[:year])

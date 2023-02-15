@@ -30,4 +30,5 @@ class Meangirl < ActiveRecord::Base
         self.all.pluck(:headshot_photo)
       end
 
+
 end
